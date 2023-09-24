@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C++ with gcc. build exe",
+            // change the compiler path if needed
+            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                //"-O1",
+                "-g",
+                //"-save-temps",
+                "${workspaceFolder}/src/betterC/*.c*",
+                //"${workspaceFolder}/src/collection/*.c*",
+                "${workspaceFolder}/src/prog/*.c*",
+                "-o",
+                "${workspaceFolder}/bin/test.exe",
+                "-Wall",
+                "-Wextra",
+                //"-lstdc++",
+                "-Wcomment",
+                "-Wno-unknown-pragmas"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Tâche générée par le débogueur.",
+            "presentation": {
+                "clear": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
