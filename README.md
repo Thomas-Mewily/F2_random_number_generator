@@ -6,7 +6,7 @@ Based on https://perso.isima.fr/~dahill/Simu-ZZ2/Lab%20%23%201%20-%20Modeling%20
 
 Compilation : 
 
-(Don't forget to create an `bin` directory in the same folder of `scr`)
+(Don't forget to create an `bin` directory in the same folder as `src`)
 
 `gcc -O1 -g ./src/betterC/*.c* ./src/prog/*.c* -o ./bin/test.exe -Wall -Wextra -Wcomment -Wno-unknown-pragmas`
 
